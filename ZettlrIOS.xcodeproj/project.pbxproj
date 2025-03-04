@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1403CAC63103788070136230 /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = F406BDD3C055110F1B8652B2 /* Down */; };
+		470CF3E7935474450B5F0D19 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = AF91EE98F23FE33D66C116E5 /* SwiftyJSON */; };
+		77F79AB0C96F00D1EF4819E3 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = DF768DD02C516E59057D48BF /* Yams */; };
+		7F1AB6DA2D776B3500663334 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1AB6D92D776B3500663334 /* Models */; };
+		7F1AB6DD2D776BB200663334 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1AB6DC2D776BB200663334 /* Models */; };
+		7F1AB6E02D776C1100663334 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1AB6DF2D776C1100663334 /* Models */; };
+		7F31D4F22D776AB100797A5D /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F31D4F12D776AB100797A5D /* Models */; };
+		7F53ABCA2D7775C5004540FA /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F53ABC92D7775C5004540FA /* Models */; };
+		7F61481E2D7766AF00841DFE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6147FF2D7766AF00841DFE /* main.swift */; };
+		7F61481F2D7766AF00841DFE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148132D7766AF00841DFE /* ContentViewModel.swift */; };
+		7F6148212D7766AF00841DFE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148152D7766AF00841DFE /* GraphView.swift */; };
+		7F6148222D7766AF00841DFE /* TagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148102D7766AF00841DFE /* TagManager.swift */; };
+		7F6148232D7766AF00841DFE /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61480F2D7766AF00841DFE /* SearchManager.swift */; };
+		7F6148252D7766AF00841DFE /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148162D7766AF00841DFE /* MarkdownRenderer.swift */; };
+		7F6148262D7766AF00841DFE /* SyncCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148022D7766AF00841DFE /* SyncCoordinator.swift */; };
+		7F6148272D7766AF00841DFE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148172D7766AF00841DFE /* SearchView.swift */; };
+		7F6148292D7766AF00841DFE /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148192D7766AF00841DFE /* TagsView.swift */; };
+		7F61482A2D7766AF00841DFE /* SyncStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148182D7766AF00841DFE /* SyncStatusView.swift */; };
+		7F61482B2D7766AF00841DFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148122D7766AF00841DFE /* ContentView.swift */; };
+		7F61482C2D7766AF00841DFE /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148142D7766AF00841DFE /* EditorView.swift */; };
+		7F61482E2D7766AF00841DFE /* ZettlrIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6148002D7766AF00841DFE /* ZettlrIOSApp.swift */; };
+		7F61482F2D7766AF00841DFE /* LinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61480E2D7766AF00841DFE /* LinkManager.swift */; };
+		7F6148322D77685500841DFE /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6148312D77685500841DFE /* ModelIO.framework */; };
+		7F659EC92D77770000C898FE /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F659EC82D77770000C898FE /* Models */; };
+		7F659ECC2D7777DB00C898FE /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F659ECB2D7777DB00C898FE /* Models */; };
+		7F659ECF2D77790300C898FE /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F659ECE2D77790300C898FE /* Models */; };
+		7F8948712D77720E00C60C4C /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F8948702D77720E00C60C4C /* Models */; };
+		7F8948742D7772B300C60C4C /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F8948732D7772B300C60C4C /* Models */; };
+		7F8948772D77733600C60C4C /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F8948762D77733600C60C4C /* Models */; };
+		7F89487A2D77740100C60C4C /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7F8948792D77740100C60C4C /* Models */; };
+		7FE608082D776C8700F158FD /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE608072D776C8700F158FD /* Models */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F6147FF2D7766AF00841DFE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7F6148002D7766AF00841DFE /* ZettlrIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZettlrIOSApp.swift; sourceTree = "<group>"; };
+		7F6148022D7766AF00841DFE /* SyncCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncCoordinator.swift; sourceTree = "<group>"; };
+		7F61480E2D7766AF00841DFE /* LinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkManager.swift; sourceTree = "<group>"; };
+		7F61480F2D7766AF00841DFE /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		7F6148102D7766AF00841DFE /* TagManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagManager.swift; sourceTree = "<group>"; };
+		7F6148122D7766AF00841DFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F6148132D7766AF00841DFE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		7F6148142D7766AF00841DFE /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		7F6148152D7766AF00841DFE /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		7F6148162D7766AF00841DFE /* MarkdownRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderer.swift; sourceTree = "<group>"; };
+		7F6148172D7766AF00841DFE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7F6148182D7766AF00841DFE /* SyncStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusView.swift; sourceTree = "<group>"; };
+		7F6148192D7766AF00841DFE /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
+		7F61481B2D7766AF00841DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F61481C2D7766AF00841DFE /* ZettlrIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZettlrIOS.entitlements; sourceTree = "<group>"; };
+		7F6148312D77685500841DFE /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		A3CFC5346547649539CD5BEC /* ZettlrIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZettlrIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344D7091C23AA692A9E939F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F659EC92D77770000C898FE /* Models in Frameworks */,
+				7F89487A2D77740100C60C4C /* Models in Frameworks */,
+				7F8948742D7772B300C60C4C /* Models in Frameworks */,
+				7F8948712D77720E00C60C4C /* Models in Frameworks */,
+				7F1AB6DA2D776B3500663334 /* Models in Frameworks */,
+				7F31D4F22D776AB100797A5D /* Models in Frameworks */,
+				7F659ECF2D77790300C898FE /* Models in Frameworks */,
+				7F1AB6E02D776C1100663334 /* Models in Frameworks */,
+				7FE608082D776C8700F158FD /* Models in Frameworks */,
+				7F8948772D77733600C60C4C /* Models in Frameworks */,
+				1403CAC63103788070136230 /* Down in Frameworks */,
+				7F659ECC2D7777DB00C898FE /* Models in Frameworks */,
+				470CF3E7935474450B5F0D19 /* SwiftyJSON in Frameworks */,
+				7F6148322D77685500841DFE /* ModelIO.framework in Frameworks */,
+				7F1AB6DD2D776BB200663334 /* Models in Frameworks */,
+				7F53ABCA2D7775C5004540FA /* Models in Frameworks */,
+				77F79AB0C96F00D1EF4819E3 /* Yams in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		792184A5E94429F7CDD758EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3CFC5346547649539CD5BEC /* ZettlrIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F6148012D7766AF00841DFE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7F6147FF2D7766AF00841DFE /* main.swift */,
+				7F6148002D7766AF00841DFE /* ZettlrIOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7F6148032D7766AF00841DFE /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				7F6148022D7766AF00841DFE /* SyncCoordinator.swift */,
+			);
+			path = Cloud;
+			sourceTree = "<group>";
+		};
+		7F6148042D7766AF00841DFE /* Export */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		7F6148052D7766AF00841DFE /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Markdown;
+			sourceTree = "<group>";
+		};
+		7F6148092D7766AF00841DFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F61480A2D7766AF00841DFE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F61480C2D7766AF00841DFE /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		7F61480D2D7766AF00841DFE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		7F6148112D7766AF00841DFE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F61480E2D7766AF00841DFE /* LinkManager.swift */,
+				7F61480F2D7766AF00841DFE /* SearchManager.swift */,
+				7F6148102D7766AF00841DFE /* TagManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7F61481A2D7766AF00841DFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F6148122D7766AF00841DFE /* ContentView.swift */,
+				7F6148132D7766AF00841DFE /* ContentViewModel.swift */,
+				7F6148142D7766AF00841DFE /* EditorView.swift */,
+				7F6148152D7766AF00841DFE /* GraphView.swift */,
+				7F6148162D7766AF00841DFE /* MarkdownRenderer.swift */,
+				7F6148172D7766AF00841DFE /* SearchView.swift */,
+				7F6148182D7766AF00841DFE /* SyncStatusView.swift */,
+				7F6148192D7766AF00841DFE /* TagsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F61481D2D7766AF00841DFE /* ZettlrIOS */ = {
+			isa = PBXGroup;
+			children = (
+				7F6148012D7766AF00841DFE /* App */,
+				7F6148032D7766AF00841DFE /* Cloud */,
+				7F6148042D7766AF00841DFE /* Export */,
+				7F6148052D7766AF00841DFE /* Markdown */,
+				7F6148092D7766AF00841DFE /* Models */,
+				7F61480A2D7766AF00841DFE /* Preview Content */,
+				7F61480C2D7766AF00841DFE /* Storage */,
+				7F61480D2D7766AF00841DFE /* Support */,
+				7F6148112D7766AF00841DFE /* Utils */,
+				7F61481A2D7766AF00841DFE /* Views */,
+				7F61481B2D7766AF00841DFE /* Info.plist */,
+				7F61481C2D7766AF00841DFE /* ZettlrIOS.entitlements */,
+			);
+			path = ZettlrIOS;
+			sourceTree = "<group>";
+		};
+		7F6148302D77685500841DFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F6148312D77685500841DFE /* ModelIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAB59231924B97F11EE5E854 = {
+			isa = PBXGroup;
+			children = (
+				7F61481D2D7766AF00841DFE /* ZettlrIOS */,
+				792184A5E94429F7CDD758EE /* Products */,
+				7F6148302D77685500841DFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		730898184CD607A72AD202F7 /* ZettlrIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2B60596B4842B18FAE39D5 /* Build configuration list for PBXNativeTarget "ZettlrIOS" */;
+			buildPhases = (
+				3FE6D89D8F4A2A830D5359AC /* Sources */,
+				344D7091C23AA692A9E939F8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZettlrIOS;
+			packageProductDependencies = (
+				F406BDD3C055110F1B8652B2 /* Down */,
+				AF91EE98F23FE33D66C116E5 /* SwiftyJSON */,
+				DF768DD02C516E59057D48BF /* Yams */,
+				7F31D4F12D776AB100797A5D /* Models */,
+				7F1AB6D92D776B3500663334 /* Models */,
+				7F1AB6DC2D776BB200663334 /* Models */,
+				7F1AB6DF2D776C1100663334 /* Models */,
+				7FE608072D776C8700F158FD /* Models */,
+				7F8948702D77720E00C60C4C /* Models */,
+				7F8948732D7772B300C60C4C /* Models */,
+				7F8948762D77733600C60C4C /* Models */,
+				7F8948792D77740100C60C4C /* Models */,
+				7F53ABC92D7775C5004540FA /* Models */,
+				7F659EC82D77770000C898FE /* Models */,
+				7F659ECB2D7777DB00C898FE /* Models */,
+				7F659ECE2D77790300C898FE /* Models */,
+			);
+			productName = ZettlrIOS;
+			productReference = A3CFC5346547649539CD5BEC /* ZettlrIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C0FFBBF9FCD787AAA71C968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					730898184CD607A72AD202F7 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4B288569CC38DF4617BF604 /* Build configuration list for PBXProject "ZettlrIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DAB59231924B97F11EE5E854;
+			packageReferences = (
+				7FCA935C25AC8CF15F338494 /* XCRemoteSwiftPackageReference "Down" */,
+				3A68B17D3804D0D1003136F9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				A56D6669DACEDBC1227B6430 /* XCRemoteSwiftPackageReference "Yams" */,
+				7F659ECD2D77790300C898FE /* XCLocalSwiftPackageReference "Models" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				730898184CD607A72AD202F7 /* ZettlrIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FE6D89D8F4A2A830D5359AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F61481E2D7766AF00841DFE /* main.swift in Sources */,
+				7F61481F2D7766AF00841DFE /* ContentViewModel.swift in Sources */,
+				7F6148212D7766AF00841DFE /* GraphView.swift in Sources */,
+				7F6148222D7766AF00841DFE /* TagManager.swift in Sources */,
+				7F6148232D7766AF00841DFE /* SearchManager.swift in Sources */,
+				7F6148252D7766AF00841DFE /* MarkdownRenderer.swift in Sources */,
+				7F6148262D7766AF00841DFE /* SyncCoordinator.swift in Sources */,
+				7F6148272D7766AF00841DFE /* SearchView.swift in Sources */,
+				7F6148292D7766AF00841DFE /* TagsView.swift in Sources */,
+				7F61482A2D7766AF00841DFE /* SyncStatusView.swift in Sources */,
+				7F61482B2D7766AF00841DFE /* ContentView.swift in Sources */,
+				7F61482C2D7766AF00841DFE /* EditorView.swift in Sources */,
+				7F61482E2D7766AF00841DFE /* ZettlrIOSApp.swift in Sources */,
+				7F61482F2D7766AF00841DFE /* LinkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54D675A126C144095AC7064D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5CFEA5CEB8103DA66C2B91C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AF49A8DDAD6275A2547C8C1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZettlrIOS/ZettlrIOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AX93533HR;
+				INFOPLIST_FILE = ZettlrIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.svencm.zettlrios;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5206FAF9621CC44C1625B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZettlrIOS/ZettlrIOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AX93533HR;
+				INFOPLIST_FILE = ZettlrIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.svencm.zettlrios;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E2B60596B4842B18FAE39D5 /* Build configuration list for PBXNativeTarget "ZettlrIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5206FAF9621CC44C1625B4F /* Debug */,
+				AF49A8DDAD6275A2547C8C1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4B288569CC38DF4617BF604 /* Build configuration list for PBXProject "ZettlrIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D675A126C144095AC7064D /* Debug */,
+				5CFEA5CEB8103DA66C2B91C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7F659ECD2D77790300C898FE /* XCLocalSwiftPackageReference "Models" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Models;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A68B17D3804D0D1003136F9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7FCA935C25AC8CF15F338494 /* XCRemoteSwiftPackageReference "Down" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnxnguyen/Down.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.0;
+			};
+		};
+		A56D6669DACEDBC1227B6430 /* XCRemoteSwiftPackageReference "Yams" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jpsim/Yams.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F1AB6D92D776B3500663334 /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F1AB6DC2D776BB200663334 /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F1AB6DF2D776C1100663334 /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F31D4F12D776AB100797A5D /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F53ABC92D7775C5004540FA /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F659EC82D77770000C898FE /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F659ECB2D7777DB00C898FE /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F659ECE2D77790300C898FE /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F8948702D77720E00C60C4C /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F8948732D7772B300C60C4C /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F8948762D77733600C60C4C /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7F8948792D77740100C60C4C /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		7FE608072D776C8700F158FD /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		AF91EE98F23FE33D66C116E5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A68B17D3804D0D1003136F9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		DF768DD02C516E59057D48BF /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A56D6669DACEDBC1227B6430 /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
+		};
+		F406BDD3C055110F1B8652B2 /* Down */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FCA935C25AC8CF15F338494 /* XCRemoteSwiftPackageReference "Down" */;
+			productName = Down;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9C0FFBBF9FCD787AAA71C968 /* Project object */;
+}

@@ -1,0 +1,33 @@
+{
+  "originHash" : "25da42381affcc08820c13c10d7ad7797955755287e25f285656b0d1e949e95e",
+  "pins" : [
+    {
+      "identity" : "down",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/johnxnguyen/Down.git",
+      "state" : {
+        "revision" : "f34b166be1f1db4aa8f573067e901d72f2a6be57",
+        "version" : "0.11.0"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "state" : {
+        "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
+        "version" : "5.0.2"
+      }
+    },
+    {
+      "identity" : "yams",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/Yams.git",
+      "state" : {
+        "revision" : "b4b8042411dc7bbb696300a34a4bf3ba1b7ad19b",
+        "version" : "5.3.1"
+      }
+    }
+  ],
+  "version" : 3
+}
