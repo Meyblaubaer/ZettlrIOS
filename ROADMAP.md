@@ -126,6 +126,182 @@
   - Batch-Operationen
   - Skript-Unterstützung
 
+## Zettlr Desktop Kompatibilität
+
+### Kompatibilitätsschicht
+
+#### 1. Dateimodell-Anpassungen
+```swift
+struct Note {
+    // Bestehende Felder
+    var id: UUID
+    var title: String
+    var content: String
+    
+    // Neue Felder für Zettlr-Kompatibilität
+    var filePath: String           // Relativer Pfad im Zettlr-Workspace
+    var lastModifiedOnDesktop: Date
+    var zettlrId: String          // Zettlr-spezifische ID
+    var frontMatter: [String: Any] // YAML Front Matter
+}
+```
+
+#### 2. Synchronisationsmanagement
+```swift
+class ZettlrSyncManager {
+    enum SyncStrategy {
+        case cloudKit    // Für iOS-only Nutzung
+        case fileSystem  // Für Zettlr Desktop Kompatibilität
+        case hybrid      // Beide Systeme
+    }
+    
+    func configureSyncStrategy(_ strategy: SyncStrategy) {
+        switch strategy {
+        case .fileSystem:
+            // Direkter Zugriff auf Zettlr-Dateisystem
+            setupFileSystemWatcher()
+        case .hybrid:
+            // Kombinierte Synchronisation
+            setupHybridSync()
+        default:
+            // Standard CloudKit
+            setupCloudKitSync()
+        }
+    }
+}
+```
+
+#### 3. Markdown-Verarbeitung
+```swift
+class MarkdownProcessor {
+    // Zettlr-spezifische Markdown-Erweiterungen
+    func processZettlrMarkdown(_ content: String) -> NSAttributedString {
+        // Unterstützung für:
+        // - YAML Front Matter
+        // - LaTeX-Blöcke
+        // - Zettlr-spezifische Links
+        // - Zitations-Syntax
+    }
+}
+```
+
+### Implementierungsphasen
+
+#### Phase A: Grundlegende Kompatibilität (Q2 2024)
+- [ ] **Dateistruktur-Anpassung**
+  - Implementierung der Zettlr-Ordnerstruktur
+  - YAML Front Matter Integration
+  - Dateinamen-Konventionen
+
+- [ ] **Basis-Synchronisation**
+  - Dateisystem-Watcher
+  - Konfliktmanagement
+  - Backup-Strategien
+
+#### Phase B: Feature-Kompatibilität (Q3 2024)
+- [ ] **Markdown-Erweiterungen**
+  - LaTeX-Support
+  - Zettlr-spezifische Syntax
+  - Link-Format-Konvertierung
+
+- [ ] **Metadaten-Management**
+  - Tag-System-Integration
+  - ID-System-Angleichung
+  - Attribut-Mapping
+
+#### Phase C: Erweiterte Integration (Q4 2024)
+- [ ] **Zitations-System**
+  - Zotero-Kompatibilität
+  - BibTeX-Integration
+  - CSL-Styles-Support
+
+- [ ] **Such-System**
+  - Globale Suche
+  - Filter-Kompatibilität
+  - Index-Synchronisation
+
+### Konfiguration
+
+```yaml
+# Zettlr-Kompatibilitäts-Konfiguration
+zettlr:
+  workspace:
+    root: "~/Documents/Zettlr"
+    structure:
+      - notes
+      - attachments
+      - templates
+    metadata:
+      format: "yaml"
+      required:
+        - id
+        - tags
+        - created
+```
+
+### Konfliktmanagement
+
+```swift
+class ConflictResolver {
+    enum ConflictStrategy {
+        case newerWins
+        case desktopPriority
+        case mobilePriority
+        case manual
+    }
+    
+    func resolveConflict(local: Note, remote: Note, strategy: ConflictStrategy) {
+        // Intelligente Konfliktlösung zwischen Desktop und Mobile
+    }
+}
+```
+
+### Technische Voraussetzungen für Kompatibilität
+
+1. **Dateisystem**
+   - Implementierung von FileProvider
+   - Dokumenttyp-Registrierung
+   - Datei-Koordination
+
+2. **Netzwerk**
+   - Offline-Fähigkeit
+   - Sync-Queuing
+   - Bandwidth-Management
+
+3. **Sicherheit**
+   - Verschlüsselte Speicherung
+   - Sichere Übertragung
+   - Berechtigungsmanagement
+
+### Integration-KPIs
+
+1. **Kompatibilität**
+   - 100% Markdown-Syntax-Kompatibilität
+   - Vollständige Metadaten-Übertragung
+   - Fehlerfreie Link-Konvertierung
+
+2. **Performance**
+   - Sync-Zeit < 2 Sekunden
+   - Konfliktrate < 1%
+   - Speichereffizienz
+
+3. **Benutzerfreundlichkeit**
+   - Nahtlose Integration
+   - Transparente Synchronisation
+   - Klare Fehlermeldungen
+
+### Risiken & Mitigationen
+
+1. **Technische Risiken**
+   - Inkompatible Änderungen in Zettlr Desktop
+   - Performance-Probleme bei großen Repositories
+   - Sync-Konflikte
+
+2. **Mitigationsstrategien**
+   - Regelmäßige Kompatibilitätstests
+   - Inkrementelle Synchronisation
+   - Automatische Konfliktlösung
+
 ## Technische Voraussetzungen
 
 ### Infrastruktur
